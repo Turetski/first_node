@@ -3,14 +3,14 @@
     <form id="page2-form3" class="list">
       <ion-list id="page2-list1">
         <label class="item item-input" id="page2-input1">
-          <input type="text" placeholder="Username">
+          <input type="text" placeholder="Username" ng-model="data.email">
         </label>
         <label class="item item-input" id="page2-input2">
-          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Password" ng-model="data.password">
         </label>
       </ion-list>
       <div class="spacer" style="height: 40px;"></div>
-      <button id="page2-button1" class="button button-balanced  button-block">Войти</button>
+      <button id="page2-button1" class="button button-balanced  button-block" ng-click = "login()">Войти</button>
       <a ui-sref="signup" id="page2-button2" style="color:#7629A1;" class="button button-positive  button-block button-clear radiused">Создать аккаунт</a>
     </form>
   </ion-content>
